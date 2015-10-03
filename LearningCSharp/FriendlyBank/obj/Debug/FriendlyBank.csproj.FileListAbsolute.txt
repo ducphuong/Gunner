@@ -1,0 +1,12 @@
+C:\Users\ndp\documents\visual studio 2012\Projects\LearningCSharp\FriendlyBank\bin\Debug\FriendlyBank.exe.config
+C:\Users\ndp\documents\visual studio 2012\Projects\LearningCSharp\FriendlyBank\bin\Debug\FriendlyBank.exe
+C:\Users\ndp\documents\visual studio 2012\Projects\LearningCSharp\FriendlyBank\bin\Debug\FriendlyBank.pdb
+C:\Users\ndp\documents\visual studio 2012\Projects\LearningCSharp\FriendlyBank\obj\Debug\FriendlyBank.exe
+C:\Users\ndp\documents\visual studio 2012\Projects\LearningCSharp\FriendlyBank\obj\Debug\FriendlyBank.pdb
+C:\Users\ndp\documents\visual studio 2012\Projects\LearningCSharp\FriendlyBank\obj\Debug\FriendlyBank.csprojResolveAssemblyReference.cache
+D:\Repo Git\Gunner\LearningCSharp\FriendlyBank\bin\Debug\FriendlyBank.exe.config
+D:\Repo Git\Gunner\LearningCSharp\FriendlyBank\obj\Debug\FriendlyBank.exe
+D:\Repo Git\Gunner\LearningCSharp\FriendlyBank\obj\Debug\FriendlyBank.pdb
+D:\Repo Git\Gunner\LearningCSharp\FriendlyBank\obj\Debug\FriendlyBank.csprojResolveAssemblyReference.cache
+D:\Repo Git\Gunner\LearningCSharp\FriendlyBank\bin\Debug\FriendlyBank.exe
+D:\Repo Git\Gunner\LearningCSharp\FriendlyBank\bin\Debug\FriendlyBank.pdb
