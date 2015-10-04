@@ -58,9 +58,9 @@ namespace FriendlyBank
             //Bank
 
             SGBank myBank = new SGBank();
-            myBank.storeAccountHT(accounts[0]);
-            myBank.storeAccountHT(accounts[1]);
-            IAccount found = myBank.findAccountHT("Phuong");
+            myBank.storeAccount(accounts[0]);
+            myBank.storeAccount(accounts[1]);
+            IAccount found = myBank.findAccount("Phuong");
             Console.WriteLine(found.ToString());
             string d = Console.ReadLine();
         }

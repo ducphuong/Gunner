@@ -12,23 +12,52 @@ namespace FriendlyBank
 
         private Hashtable bankHashtable; // the bank use a hash table to hold all bank account
 
+        private Dictionary<string, IAccount> AccountDict;
         public SGBank()
         {
             bankHashtable = new Hashtable();
+            AccountDict = new Dictionary<string, IAccount>();
         }
 
+        
+        public IAccount findAccount(string name)
+        {
+            if (AccountDict.ContainsKey(name))
+            {
+                return AccountDict[name];
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+
+        public bool storeAccount(IAccount aAccount)
+        {
+            if (AccountDict.ContainsKey(aAccount.Name))
+            {
+                return false;
+            }
+            else
+            {
+                AccountDict.Add(aAccount.Name,aAccount);
+                return true;
+            }
+        }
+
+        /************** Old code *************/
         public IAccount findAccountHT(string name)
         {
             return bankHashtable[name] as IAccount; // using as ... to return as a reference to an object of type IAccount
         }
 
-        
+
         public bool storeAccountHT(IAccount aAccount)
         {
-            bankHashtable.Add(aAccount.Name,aAccount);
+            bankHashtable.Add(aAccount.Name, aAccount);
             return true;
         }
-
 
         /*
         public SGBank(int banksize)
