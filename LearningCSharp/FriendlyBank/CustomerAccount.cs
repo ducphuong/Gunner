@@ -18,6 +18,42 @@ namespace FriendlyBank
         private string name;
         private string address;
 
+        public string Name //Name as a interface (declared from IAccount to be implemented here)
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                this.name = value;
+            }
+        }
+
+        public string Address //Name as a interface (declared from IAccount to be implemented here)
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                this.address = value;
+            }
+        }
+
+        public decimal Balance //Name as a interface (declared from IAccount to be implemented here)
+        {
+            get
+            {
+                return balance;
+            }
+            set
+            {
+                this.balance = value;
+            }
+        }
+
         //constructor
         //create a parameterless constructor (to help the constructor this class' children)
         public CustomerAccount()
@@ -57,11 +93,6 @@ namespace FriendlyBank
             balance += amount;
         }
 
-        public decimal getBalance()
-        {
-            return balance;
-        }
-
         public static bool accountAllowed(decimal income, int age)
         {
             if (income >= minIncome && age >= minAge)
@@ -74,19 +105,28 @@ namespace FriendlyBank
             }
         }
 
-        /*
-        public string printWarning()
+
+        public override string printWarning() //override
         {
-            return "it is a warning message";
+            return "it is a warning message to " + name;
         }
-         * */
-        /*
-        public AccountState State;
-        public string Name;
-        public string Address;
-        public int AccountNumber;
-        public int Balance;
-        public int Overdraft;
-        */
+
+        public override string ToString()
+        {
+            return " Name: " + name + " balance :" + balance;
+            //throw new NotImplementedException();
+        }
+
+        public override bool Equals(object obj)
+        {
+            CustomerAccount vCAccount = (CustomerAccount) obj;
+            if ((vCAccount.name == name)&& (vCAccount.address == address) && (vCAccount.balance == balance))
+            {
+                return true;
+            }
+            else
+                return false;
+            //throw new NotImplementedException();
+        }
     }
 }

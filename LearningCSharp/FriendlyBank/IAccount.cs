@@ -8,8 +8,23 @@ namespace FriendlyBank
 {
     public interface IAccount
     {
+        string Name //interface to get/sset name a property common from all account
+        {
+            get;set;
+        }
+
+        string Address
+        {
+            get;set;
+        }
+
+        decimal Balance
+        {
+            get;
+            set;
+        }
         void payInFunds(decimal amount);
         bool withdrawFunds(decimal amount);
-        decimal getBalance();
+        string printWarning();// create interface for prinWarning function in the abstract class
     }
 }
